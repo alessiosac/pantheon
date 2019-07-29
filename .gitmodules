@@ -54,3 +54,7 @@
 	path = third_party/fillp-sheep
 	url = https://github.com/fillthepipe/fillp-sheep.git
 	ignore = dirty
+[submodule "third_party/pacen"]
+	path = third_party/pacen
+	url = https://gitlab.com/slucsnrg/audiodrone.git
+	ignore = dirty
