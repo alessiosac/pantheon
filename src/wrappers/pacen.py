@@ -40,6 +40,7 @@ def main():
     if args.option == 'receiver':
         # cmd = ['iperf', '-Z', 'pacen', '-s', '-p', args.port]
         print(recv_src)
+        print('Prima di cmd')
         cmd = ['PYTHONPATH=' + cc_repo, 'python3', recv_src]
         check_call(cmd)
         return
