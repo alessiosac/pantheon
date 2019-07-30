@@ -40,14 +40,14 @@ def main():
     if args.option == 'receiver':
         # cmd = ['iperf', '-Z', 'pacen', '-s', '-p', args.port]
         print(recv_src)
-        cmd = ['python3', recv_src]
+        cmd = ['PYTHONPATH=', cc_repo, 'python3', recv_src]
         check_call(cmd)
         return
 
     # [required] run the other side to connect to the first side on 'args.ip'
     if args.option == 'sender':
         # cmd = ['iperf', '-Z', 'pacen', '-c', args.ip, '-p', args.port, '-t', '75']
-        cmd = ['python3', send_src, '-a', args.ip, '-sim_time', '75']
+        cmd = ['PYTHONPATH=', cc_repo, 'python3', send_src, '-a', args.ip, '-sim_time', '75']
         print(cmd)
         check_call(cmd)
         return
