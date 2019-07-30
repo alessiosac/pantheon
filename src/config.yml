@@ -67,3 +67,7 @@ schemes:
     name: FillP-Sheep
     color: violet
     marker: 'D'
+  pacen:
+    name: Pacen
+    color: green
+    marker: 'D'
